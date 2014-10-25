@@ -6,7 +6,7 @@ library(tidyr)
 feature_label <- read.table("./UCI HAR Dataset/features.txt", 
                 col.names = c("feature_id", "feature"), header = FALSE)
 activity_label <- read.table("./UCI HAR Dataset/activity_labels.txt", 
-                col.names = c("activity_id", "activity"), header = FALSE)
+                col.names = c("activity_id", "activity_name"), header = FALSE)
 
 ### Read the data of test subject
 test_data <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)
@@ -46,7 +46,7 @@ complete_tbl <- arrange(complete_tbl, subject_id)
 
 ### Uses descriptive activity names to name the activities in the data set
 complete_tbl$activity <- factor(complete_tbl$activity, 
-                                labels=activity_label[,"activity"])
+                                labels=activity_label[,"activity_name"])
 
 ### From the data set in step 4, creates a second, independent tidy data set 
 ### with the average of each variable for each activity and each subject.
