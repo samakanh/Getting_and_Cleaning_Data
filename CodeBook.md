@@ -50,8 +50,8 @@ This script generates three tidy data table, extracts only the measurements on t
 
 ### Variable in tidy data set
 #### complete_tbl and summarize_tbl
- subject_id: 	Subject identification number range between 1-30<br />
- activity:	The activity perform in each observation<br />
+ **subject_id**: 	Subject identification number range between 1-30<br />
+ **activity**:	The activity perform in each observation<br />
 ```
 1 WALKING
 2 WALKING_UPSTAIRS
@@ -60,7 +60,7 @@ This script generates three tidy data table, extracts only the measurements on t
 5 STANDING
 6 LAYING
 ```
- variable 3-68 is the value measure from each feature, see the list of feature in the data set below;<br /> 
+ **variable 3-68** is the value measure from each feature, see the list of feature in the data set below;<br /> 
  tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, <br />
  tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z, <br />
  tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, <br />
@@ -89,8 +89,8 @@ This script generates three tidy data table, extracts only the measurements on t
  fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std()
 
 #### subject_tbl
- subject_id: 	Subject identification number range between 1-30<br />
- subject_type:	Identify the source of data
+ **subject_id**: 	Subject identification number range between 1-30<br />
+ **subject_type**:	Identify the source of data
 ```
 train
 test
