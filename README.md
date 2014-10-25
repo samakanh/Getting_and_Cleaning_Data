@@ -3,8 +3,7 @@ This file contain the prerequisite before running the script and the introductio
 
 #### Prerequisite
 1. dplyr package
-2. tidyr package
-3. download data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and extract to your working directory ("UCI HAR Dataset" folder should visible in your working directory)
+2. download data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and extract to your working directory ("UCI HAR Dataset" folder should visible in your working directory)
 
 #### Introduction to the run_analysis.R
 The run_analysis.R script read the raw data from the following files;
