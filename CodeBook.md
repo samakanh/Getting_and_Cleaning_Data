@@ -5,7 +5,7 @@
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 ```
-Data set: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+data set: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ```
 > ##### The dataset includes the following files:
 > - 'README.txt'
@@ -50,9 +50,8 @@ This script generates three tidy data table, extracts only the measurements on t
 
 ### Variable in tidy data set
 #### complete_tbl and summarize_tbl
-> subject_id: 	Subject identification number range between 1-30
-> activity:	The activity perform in each observation
->
+> subject_id: 	Subject identification number range between 1-30<br />
+> activity:	The activity perform in each observation<br />
 ```
 1 WALKING
 2 WALKING_UPSTAIRS
@@ -61,22 +60,36 @@ This script generates three tidy data table, extracts only the measurements on t
 5 STANDING
 6 LAYING
 ```
-> variable 3-68 is the value measure from each feature, see the list of feature in the data set below; 
-> tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z, 
-> tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, tGravityAcc-std()-X, tGravityAcc-std()-Y, tGravityAcc-std()-Z,
-> tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z, tBodyAccJerk-std()-X, tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z,
-> tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z, tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z,
-> tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y, tBodyGyroJerk-mean()-Z, tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z,
-> tBodyAccMag-mean(), tBodyAccMag-std(), tGravityAccMag-mean(), tGravityAccMag-std(), tBodyAccJerkMag-mean(), tBodyAccJerkMag-std(),
-> tBodyGyroMag-mean(), tBodyGyroMag-std(), tBodyGyroJerkMag-mean(), tBodyGyroJerkMag-std(),
-> fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z, fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z,
-> fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z, fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y, fBodyAccJerk-std()-Z,
-> fBodyGyro-mean()-X, fBodyGyro-mean()-Y, fBodyGyro-mean()-Z, fBodyGyro-std()-X, fBodyGyro-std()-Y, fBodyGyro-std()-Z,
-> fBodyAccMag-mean(), fBodyAccMag-std(), fBodyBodyAccJerkMag-mean(), fBodyBodyAccJerkMag-std(),
-> fBodyBodyGyroMag-mean(), fBodyBodyGyroMag-std(), fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std()
+> variable 3-68 is the value measure from each feature, see the list of feature in the data set below;<br /> 
+> tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, <br />
+> tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z, <br />
+> tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, <br />
+> tGravityAcc-std()-X, tGravityAcc-std()-Y, tGravityAcc-std()-Z, <br />
+> tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z, <br />
+> tBodyAccJerk-std()-X, tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z, <br />
+> tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z, <br />
+> tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z, <br />
+> tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y, tBodyGyroJerk-mean()-Z, <br />
+> tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z, <br />
+> tBodyAccMag-mean(), tBodyAccMag-std(), <br />
+> tGravityAccMag-mean(), tGravityAccMag-std(), <br />
+> tBodyAccJerkMag-mean(), tBodyAccJerkMag-std(), <br />
+> tBodyGyroMag-mean(), tBodyGyroMag-std(), <br />
+> tBodyGyroJerkMag-mean(), tBodyGyroJerkMag-std(), <br />
+> fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z, <br />
+> fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z, <br />
+> fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z, <br />
+> fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y, fBodyAccJerk-std()-Z, <br />
+> fBodyGyro-mean()-X, fBodyGyro-mean()-Y, <br />
+> fBodyGyro-mean()-Z, fBodyGyro-std()-X, <br />
+> fBodyGyro-std()-Y, fBodyGyro-std()-Z, <br />
+> fBodyAccMag-mean(), fBodyAccMag-std(), <br />
+> fBodyBodyAccJerkMag-mean(), fBodyBodyAccJerkMag-std(), <br />
+> fBodyBodyGyroMag-mean(), fBodyBodyGyroMag-std(), <br />
+> fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std()
 
 #### subject_tbl
-> subject_id: 	Subject identification number range between 1-30
+> subject_id: 	Subject identification number range between 1-30<br />
 > subject_type:	Identify the source of data
 >
 ```
@@ -87,13 +100,19 @@ test
 ### Transformation to tidy data set
 1. Merges the training and the test sets to create one data set.
 	- read the following files into the data.frame; 
+		* features.txt 
+		* activity_labels.txt 
+		* X_test.txt 
+		* y_test.txt 
+		* subject_test.txt 
+		* X_train.txt 
+		* y_train.txt
+		* subject_train.txt
 
-	> features.txt, activity_labels.txt, X_test.txt, y_test.txt, subject_test.txt, X_train.txt, y_train.txt and subject_train.txt
-
-	- change variable(column name) in "X_test" and "X_train" data frame with the "features" data frame
+	- change variable(column name) in "X_test" and "X_train" data frame with the "features" data frame  
 
 	> This method appropriately labels the data set with descriptive variable names. 
-	
+
 	- row bind "X_test" and "X_train" into one data set called "complete_data"
 	- row bind "y_test" and "y_train" into one data set called "complete_activity"
 	- row bind "subject_test" and "subject_train" into one data set called "complete_subject"
@@ -101,14 +120,14 @@ test
 	- convert "complete_tbl" from data.frame to tbl_df
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-	- filter the "complete_tbl" variable only the subject_id, activity and mean() and std() for each measurement
-	- arrange the "complete_tbl" by subject_id in ascending order
+	- filter the "complete_tbl" variable only the *subject_id*, *activity* and *mean() and std() for each measurement*
+	- arrange the "complete_tbl" by *subject_id* in ascending order
 
 3. Uses descriptive activity names to name the activities in the data set.
-	- convert activity variable into factor
-	- label the activity variable with the "activity_labels" data frame
+	- convert *activity* variable into factor
+	- label the *activity* variable factor label with the "activity_labels" data frame
 
 4. Creates independent tidy data set with the average of each variable for each activity and each subject.
-	- group the "complete_tbl" by subject_id and activity
-	- summarise each variable using mean function
+	- group the "complete_tbl" by *subject_id* and *activity*
+	- summarise each variable using **mean** function
 	- assign the summarized data set to "summarize_tbl"
