@@ -2,13 +2,13 @@
 library(dplyr)
 library(tidyr)
 
-### Make features and activity label table
+### Read feature and activity label
 feature_label <- read.table("./UCI HAR Dataset/features.txt", 
                 col.names = c("feature_id", "feature"), header = FALSE)
 activity_label <- read.table("./UCI HAR Dataset/activity_labels.txt", 
                 col.names = c("activity_id", "activity"), header = FALSE)
 
-### Make the data of test subject table
+### Read the data of test subject
 test_data <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)
 colnames(test_data) <- feature_label[,"feature"]
 test_activity <- read.table("./UCI HAR Dataset/test/y_test.txt", 
@@ -16,7 +16,7 @@ test_activity <- read.table("./UCI HAR Dataset/test/y_test.txt",
 test_subject <- read.table("./UCI HAR Dataset/test/subject_test.txt", 
                 col.names = c("subject_id"), header = FALSE)
 
-### Make the data of train subject table
+### Read the data of train subject
 train_data <- read.table("./UCI HAR Dataset/train/X_train.txt", header = FALSE)
 colnames(train_data) <- feature_label[,"feature"]
 train_activity <- read.table("./UCI HAR Dataset/train/y_train.txt", 
