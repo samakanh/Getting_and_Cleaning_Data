@@ -7,18 +7,18 @@ This file contain the prerequisite before running the script and the introductio
 
 #### Introduction to the run_analysis.R
 The run_analysis.R script read the raw data from the following files;
-- features.txt
-- activity_labels.txt
-- X_test.txt
-- y_test.txt
-- subject_test.txt
-- X_train.txt
-- y_train.txt
-- subject_train.txt
+- ./UCI HAR Dataset/features.txt
+- ./UCI HAR Dataset/activity_labels.txt
+- ./UCI HAR Dataset/test/X_test.txt
+- ./UCI HAR Dataset/test/y_test.txt
+- ./UCI HAR Dataset/test/subject_test.txt
+- ./UCI HAR Dataset/train/X_train.txt
+- ./UCI HAR Dataset/train/y_train.txt
+- ./UCI HAR Dataset/train/subject_train.txt
 
 and generates three tidy data set;
 - complete_tbl  : Contain all observations from the source files.
 - summarize_tbl : Contain the independent tidy data set with the average of each variable for each activity and each subject.
 - subject_tbl   : Contain the link between subject and how the data obtained, train or test.
 
-then export **summarize_tbl** data set as a text file, named "my_tidy_data.txt", in your working directory.
+then export **summarize_tbl** data set as a text file, named "my_tidy_data.txt", to your working directory.
