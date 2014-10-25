@@ -1,6 +1,5 @@
 ### Load the necessary library
 library(dplyr)
-library(tidyr)
 
 ### Read feature and activity label
 feature_label <- read.table("./UCI HAR Dataset/features.txt", 
