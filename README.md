@@ -16,7 +16,7 @@ The run_analysis.R script read the raw data from the following files;
 - ./UCI HAR Dataset/train/y_train.txt
 - ./UCI HAR Dataset/train/subject_train.txt
 
-and generates three tidy data set;
+and generates three tidy data set, extracts only the measurements on the mean and standard deviation for each measurement;
 - complete_tbl  : Contain all observations from the source files.
 - summarize_tbl : Contain the independent tidy data set with the average of each variable for each activity and each subject.
 - subject_tbl   : Contain the link between subject and how the data obtained, train or test.
