@@ -50,8 +50,8 @@ This script generates three tidy data table, extracts only the measurements on t
 
 ### Variable in tidy data set
 #### complete_tbl and summarize_tbl
-> subject_id: 	Subject identification number range between 1-30<br />
-> activity:	The activity perform in each observation<br />
+ subject_id: 	Subject identification number range between 1-30<br />
+ activity:	The activity perform in each observation<br />
 ```
 1 WALKING
 2 WALKING_UPSTAIRS
@@ -60,38 +60,37 @@ This script generates three tidy data table, extracts only the measurements on t
 5 STANDING
 6 LAYING
 ```
-> variable 3-68 is the value measure from each feature, see the list of feature in the data set below;<br /> 
-> tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, <br />
-> tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z, <br />
-> tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, <br />
-> tGravityAcc-std()-X, tGravityAcc-std()-Y, tGravityAcc-std()-Z, <br />
-> tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z, <br />
-> tBodyAccJerk-std()-X, tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z, <br />
-> tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z, <br />
-> tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z, <br />
-> tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y, tBodyGyroJerk-mean()-Z, <br />
-> tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z, <br />
-> tBodyAccMag-mean(), tBodyAccMag-std(), <br />
-> tGravityAccMag-mean(), tGravityAccMag-std(), <br />
-> tBodyAccJerkMag-mean(), tBodyAccJerkMag-std(), <br />
-> tBodyGyroMag-mean(), tBodyGyroMag-std(), <br />
-> tBodyGyroJerkMag-mean(), tBodyGyroJerkMag-std(), <br />
-> fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z, <br />
-> fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z, <br />
-> fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z, <br />
-> fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y, fBodyAccJerk-std()-Z, <br />
-> fBodyGyro-mean()-X, fBodyGyro-mean()-Y, <br />
-> fBodyGyro-mean()-Z, fBodyGyro-std()-X, <br />
-> fBodyGyro-std()-Y, fBodyGyro-std()-Z, <br />
-> fBodyAccMag-mean(), fBodyAccMag-std(), <br />
-> fBodyBodyAccJerkMag-mean(), fBodyBodyAccJerkMag-std(), <br />
-> fBodyBodyGyroMag-mean(), fBodyBodyGyroMag-std(), <br />
-> fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std()
+ variable 3-68 is the value measure from each feature, see the list of feature in the data set below;<br /> 
+ tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, <br />
+ tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z, <br />
+ tGravityAcc-mean()-X, tGravityAcc-mean()-Y, tGravityAcc-mean()-Z, <br />
+ tGravityAcc-std()-X, tGravityAcc-std()-Y, tGravityAcc-std()-Z, <br />
+ tBodyAccJerk-mean()-X, tBodyAccJerk-mean()-Y, tBodyAccJerk-mean()-Z, <br />
+ tBodyAccJerk-std()-X, tBodyAccJerk-std()-Y, tBodyAccJerk-std()-Z, <br />
+ tBodyGyro-mean()-X, tBodyGyro-mean()-Y, tBodyGyro-mean()-Z, <br />
+ tBodyGyro-std()-X, tBodyGyro-std()-Y, tBodyGyro-std()-Z, <br />
+ tBodyGyroJerk-mean()-X, tBodyGyroJerk-mean()-Y, tBodyGyroJerk-mean()-Z, <br />
+ tBodyGyroJerk-std()-X, tBodyGyroJerk-std()-Y, tBodyGyroJerk-std()-Z, <br />
+ tBodyAccMag-mean(), tBodyAccMag-std(), <br />
+ tGravityAccMag-mean(), tGravityAccMag-std(), <br />
+ tBodyAccJerkMag-mean(), tBodyAccJerkMag-std(), <br />
+ tBodyGyroMag-mean(), tBodyGyroMag-std(), <br />
+ tBodyGyroJerkMag-mean(), tBodyGyroJerkMag-std(), <br />
+ fBodyAcc-mean()-X, fBodyAcc-mean()-Y, fBodyAcc-mean()-Z, <br />
+ fBodyAcc-std()-X, fBodyAcc-std()-Y, fBodyAcc-std()-Z, <br />
+ fBodyAccJerk-mean()-X, fBodyAccJerk-mean()-Y, fBodyAccJerk-mean()-Z, <br />
+ fBodyAccJerk-std()-X, fBodyAccJerk-std()-Y, fBodyAccJerk-std()-Z, <br />
+ fBodyGyro-mean()-X, fBodyGyro-mean()-Y, <br />
+ fBodyGyro-mean()-Z, fBodyGyro-std()-X, <br />
+ fBodyGyro-std()-Y, fBodyGyro-std()-Z, <br />
+ fBodyAccMag-mean(), fBodyAccMag-std(), <br />
+ fBodyBodyAccJerkMag-mean(), fBodyBodyAccJerkMag-std(), <br />
+ fBodyBodyGyroMag-mean(), fBodyBodyGyroMag-std(), <br />
+ fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std()
 
 #### subject_tbl
-> subject_id: 	Subject identification number range between 1-30<br />
-> subject_type:	Identify the source of data
->
+ subject_id: 	Subject identification number range between 1-30<br />
+ subject_type:	Identify the source of data
 ```
 train
 test
